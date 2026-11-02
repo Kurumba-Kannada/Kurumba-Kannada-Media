@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>குறும்பா கிறிஸ்தவ வளங்கள் | Kurumba Christian Media</title>
+  <meta name="description" content="Download Kurumba Kannada Bible, Songs, and YouTube Channel.">
+  <meta name="theme-color" content="#1e293b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@500;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      font-family: 'Mukta Malar', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem 1rem 3rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header Profile */
+    .header-box {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .cross-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 1rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563eb, #7c3aed);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+    }
+
+    .cross-icon svg {
+      width: 38px;
+      height: 38px;
+      fill: #ffffff;
+    }
+
+    .main-title-ta {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.3;
+      margin-bottom: 0.3rem;
+    }
+
+    .main-title-en {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.6rem;
+    }
+
+    .instruction-badge {
+      display: inline-block;
+      background: #1e293b;
+      border: 1px solid #334155;
+      color: #38bdf8;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    /* Cards List */
+    .cards-list {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Individual Big Card */
+    .app-card {
+      display: flex;
+      align-items: center;
+      background: #1e293b;
+      border: 2px solid #334155;
+      border-radius: 18px;
+      padding: 1.25rem 1.1rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .app-card:hover, .app-card:active {
+      transform: translateY(-2px);
+      background: #253349;
+      border-color: #60a5fa;
+    }
+
+    /* Card Left Icon */
+    .card-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-right: 1.1rem;
+    }
+
+    .icon-bible {
+      background: linear-gradient(135deg, #d97706, #b45309);
+      box-shadow: 0 4px 14px rgba(217, 119, 6, 0.4);
+    }
+
+    .icon-songs {
+      background: linear-gradient(135deg, #059669, #047857);
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.4);
+    }
+
+    .icon-youtube {
+      background: linear-gradient(135deg, #dc2626, #991b1b);
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.4);
+    }
+
+    .card-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: #ffffff;
+    }
+
+    /* Card Details */
+    .card-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-title-ta {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 0.2rem;
+    }
+
+    .card-title-en {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #94a3b8;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.4rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .btn-play {
+      background: #0284c7;
+      color: #ffffff;
+    }
+
+    .btn-yt {
+      background: #e11d48;
+      color: #ffffff;
+    }
+
+    .card-arrow {
+      margin-left: 0.5rem;
+      color: #94a3b8;
+    }
+
+    .card-arrow svg {
+      width: 24px;
+      height: 24px;
+      fill: currentColor;
+    }
+
+    /* Footer */
+    footer {
+      margin-top: 2.5rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header-box">
+      <div class="cross-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M10.5 2h3v6.5H20v3h-6.5V22h-3v-10.5H4v-3h6.5V2z"/>
+        </svg>
+      </div>
+      <h1 class="main-title-ta">குறும்பா கிறிஸ்தவ வளங்கள்</h1>
+      <div class="main-title-en">Kurumba Christian Fellowship</div>
+      <div class="instruction-badge">&#128071; தொட்டு திறக்கவும் / Tap to Open or Download</div>
+    </div>
+
+    <!-- Cards List -->
+    <div class="cards-list">
+
+      <!-- 1. Bible -->
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=in.nlci.kurumbakannada.bible&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+        <div class="card-icon icon-bible">
+          <svg viewBox="0 0 24 24">
+            <path d="M19 2H6c-1.2 0-2 .8-2 2v16c0 1.2.8 2 2 2h13c.6 0 1-.4 1-1V3c0-.6-.4-1-1-1zm-1 18H6c-.6 0-1-.4-1-1V5c.3-.6.6-.8 1-.9H18v15.9zM11 6h2v4h4v2h-4v6h-2v-6H7v-2h4V6z"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <div class="card-title-ta">குறும்பா கன்னட வேதம்</div>
+          <div class="card-title-en">Kurumba Kannada Bible</div>
+          <span class="card-btn btn-play">
+            &#9654; பதிவிறக்கு (Download App)
+          </span>
+        </div>
+        <div class="card-arrow">
+          <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </div>
+      </a>
+
+      <!-- 2. Songs -->
+      <a class="app-card" href="https://play.google.com/store/apps/details?id=com.nlci.kk.songs&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">
+        <div class="card-icon icon-songs">
+          <svg viewBox="0 0 24 24">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6zm-2 16c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <div class="card-title-ta">குறும்பா கன்னட பாடல்கள்</div>
+          <div class="card-title-en">Kurumba Kannada Songs</div>
+          <span class="card-btn btn-play">
+            &#9654; பதிவிறக்கு (Download App)
+          </span>
+        </div>
+        <div class="card-arrow">
+          <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </div>
+      </a>
+
+      <!-- 3. YouTube -->
+      <a class="app-card" href="https://www.youtube.com/@tamilkurumbachristianfello5176" target="_blank" rel="noopener noreferrer">
+        <div class="card-icon icon-youtube">
+          <svg viewBox="0 0 24 24">
+            <path d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z"/>
+          </svg>
+        </div>
+        <div class="card-content">
+          <div class="card-title-ta">யூடியூப் சேனல்</div>
+          <div class="card-title-en">Kurumba Christian Network</div>
+          <span class="card-btn btn-yt">
+            &#9654; பார்க்க (Watch on YouTube)
+          </span>
+        </div>
+        <div class="card-arrow">
+          <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      Tamil Kurumba Christian Fellowship<br>
+      ஆண்டவராகிய இயேசு கிறிஸ்துவின் நாமத்தில் வாழ்த்துகிறோம்
+    </footer>
+
+  </div>
+
+</body>
+</html>
